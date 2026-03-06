@@ -21,21 +21,9 @@ public class DescendingSimilarityJobComparator implements Comparator<CandidateJo
     @Override
     public int compare(CandidateJobMatch o1, CandidateJobMatch o2) {
         int compareValue = Double.compare(o2.getSimilarityScore(), o1.getSimilarityScore());
-//        if (compareValue != 0) {
-//            return compareValue;
-//        }
-//        return o1.getJobPosting().getTitle().compareTo(o2.getJobPosting().getTitle());
         list.add(compareValue);
-        return Double.compare(o2.getSimilarityScore(), o1.getSimilarityScore() != 0 ? compareValue : o1.getJobPosting().getTitle().compareTo(o2.getJobPosting().getTitle());
+        return Double.compare(o2.getSimilarityScore(), o1.getSimilarityScore() != 0 ? compareValue : o1.getJobPosting().getTitle().compareTo(o2.getJobPosting().getTitle()));
 
-        try {
-            int a = test(4);
-        } catch (IOException e) {
-            System.out.printf("Hello world!\n");
-            return -1;
-        } finally {
-            System.out.printf("Bye bye.");
-        }
     }
 
     public static void main() {
