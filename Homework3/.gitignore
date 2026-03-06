@@ -16,3 +16,6 @@ build/
 
 # OS files
 .DS_Store
+
+# Ignore lib folder
+lib/
